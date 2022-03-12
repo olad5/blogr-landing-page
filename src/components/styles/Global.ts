@@ -10,10 +10,11 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: ${({theme}) => theme.palette.neutral.white};
     color: hsl(192,100%,9%);
-    font-family: 'Overpass',sans-serif;
+    font-family: 'Overpass','Ubuntu', sans-serif;
+    // font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     margin: 0;
-}
+  }
 
   p {
     opacity: 0.6;

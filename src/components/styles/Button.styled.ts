@@ -9,9 +9,9 @@ export const Button = styled.button<ButtonProps>`
   border-radius: 50px;
   border: ${(props) => props.border || 'none'};
   cursor: pointer;
-  font-size: 16px;
+  font-size: 0.9rem;
   font-weight: 700;
-  padding: 15px 60px;
+  padding: 15px 20px;
   background-color: ${(props) => props.bg || props.theme.palette.neutral.white};
   color: ${(props) => props.color || props.theme.palette.primary.lightRed};
 

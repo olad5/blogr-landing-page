@@ -10,19 +10,21 @@ export const StyledHeader = styled.header`
   background-size: 210%, 100%;
   height: 60vh;
   text-align:center;
+  border-bottom-left-radius:100px;
 
   h1 {
     font-size: 4rem;
     color: ${({theme}) => theme.palette.secondary.contrastText};
+    font-weight:600;
   }
 
   p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: ${({theme}) => theme.palette.secondary.contrastText};
   }
 
   .cta-btns {
-    width:23rem;
+    width:16rem;
     height:2.8rem;
     display:inline-flex;
     justify-content: space-around;
@@ -38,9 +40,34 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 40px;
 
+  & > div {
+  display: flex;
+
+  }
+
+  .nav-links {
+    display: flex;
+    margin-left: 2rem;
+    width: 20rem;
+    justify-content:space-between;
+    align-items:center;
+
+    & > a {
+      font-size: 1rem;
+      color: #fff;
+      text-decoration: none;
+
+    }
+  }
+
 `
 
 export const Logo = styled.img`
+
+`
+
+export const Image = styled.img`
+  margin-left: 3px;
 
 `
 
