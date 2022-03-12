@@ -1,53 +1,40 @@
-import {StyledHeader, Nav, Logo, Image} from './styles/Header.styled'
+import {StyledHeader, Nav, Logo} from './styles/Header.styled'
 import {Container} from './styles/Container.styled'
 import {Flex} from './styles/Flex.styled'
 import {Button} from './styles/Button.styled'
 
-// const Header: React.FC
-
-// import Button from '@material-ui/core/Button';
-// // Types
-// import {CartItemType} from '../App';
-// // Styles
-// import {Wrapper} from './Item.styles';
-
-// type Props = {
-//   item: CartItemType;
-//   handleAddToCart: (clickedItem: CartItemType) => void;// this is also the same function coming from the App.tsx
-// };
-
-// const Item: React.FC<Props> = ({item, handleAddToCart}) => (
 
 
 
 const Header: React.FC = () => (
-  <div>Hello world</div>
-    <StyledHeader>
-      <Container>
-        <Nav>
-          <Logo src='./images/logo.svg' alt='' />
-          <Button>Try It Free</Button>
-        </Nav>
+  <StyledHeader >
+    <Container>
 
-        <Flex>
-          <div>
-            <h1>Build The Community Your Fans Will Love</h1>
+      <Nav>
+        <Logo src='./images/logo.svg' alt='' />
+      </Nav>
 
-            <p>
-              Huddle re-imagines the way we build communities. You have a voice,
-              but so does your audience. Create connections with your users as
-              you engage in genuine discussion.
-            </p>
+      <div>
+        <h1>A modern publishing platform</h1>
 
-            <Button bg='#ff0099' color='#fff'>
-              Get Started For Free
-            </Button>
-          </div>
+        <p>Grow your audience and build your online brand</p>
 
-          <Image src='./images/illustration-mockups.svg' alt='' />
-        </Flex>
-      </Container>
-    </StyledHeader>
+
+        <div className='cta-btns'>
+          <Button >
+            Start For Free
+          </Button>
+
+          <Button border='1px solid #fff' bg='transparent' color='#fff'>
+            Learn More
+          </Button>
+        </div>
+
+      </div>
+
+    </Container>
+
+  </StyledHeader >
 
 
 );

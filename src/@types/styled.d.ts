@@ -20,6 +20,12 @@ declare module 'styled-components' {
         veryDarkGrayishBlue: string;
         veryDarkBlackBlue: string;
       },
+      gradient: {
+        veryLightRed: string;
+        lightRed: string;
+        veryDarkGrayBlue: string;
+        veryDarkDesaturatedBlue: string;
+      },
       secondary: {
         main: string;
         contrastText: string;
