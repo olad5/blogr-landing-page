@@ -70,4 +70,3 @@ export const Image = styled.img`
   margin-left: 3px;
 
 `
-

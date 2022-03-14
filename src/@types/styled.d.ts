@@ -8,7 +8,7 @@ declare module 'styled-components' {
     mobile: string,
     desktop: string,
 
-    palette: {
+     palette: {
       primary: {
         lightRed: string;
         veryLightRed: string;
