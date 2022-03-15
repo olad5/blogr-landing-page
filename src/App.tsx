@@ -1,6 +1,8 @@
 import {ThemeProvider} from 'styled-components'
+
 /* Components */
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 /* Styles */
 import {Container} from './components/styles/Container.styled'
@@ -43,7 +45,7 @@ function App() {
         <InfrastructureSection>
           <div className='infrastructure'>
             <Container>
-              <Flex>
+              <Flex height='none'>
                 <Image src='./images/illustration-phones.svg' />
                 <div className='section-info'>
                   <h4>State of the Art Infrastructure</h4>
@@ -74,6 +76,8 @@ function App() {
             </p>
           </StyledInfo>
         </OutroSection>
+
+        <Footer />
       </>
     </ThemeProvider>
   )
