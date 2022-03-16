@@ -1,13 +1,20 @@
 /* Components */
 import {Container} from './styles/Container.styled'
 import {Button} from './styles/Button.styled'
+import IconButton from '@mui/material/IconButton';
 import MenuListComposition from './MenuList'
+import {useContext} from 'react'
+import {ThemeContext} from 'styled-components'
 
 /* Styles */
 import {StyledHeader, Nav, Logo} from './styles/Header.styled'
 
 
 const Header: React.FC = () => {
+
+  /* using the styled components global theme */
+  const themeContext = useContext(ThemeContext)
+
 
   return (
     <StyledHeader >
@@ -23,7 +30,26 @@ const Header: React.FC = () => {
           </div>
           <div>
             <Button bg='transparent' color='#fff'>Login</Button>
-            <Button>Sign Up</Button>
+            <IconButton
+              sx={{
+                borderRadius: themeContext.borderRadius,
+                backgroundColor: themeContext.palette.neutral.white,
+                color: themeContext.palette.primary.lightRed,
+                fontSize: '0.9rem',
+                fontWeight: '700',
+                cursor: "pointer",
+                padding: "15px 20px",
+                "&:hover": {
+                  backgroundColor: themeContext.palette.primary.veryLightRed,
+                  color: themeContext.palette.neutral.white,
+                  cursor: "pointer",
+                  borderRadius: themeContext.borderRadius,
+                }
+              }}
+
+            >
+              Sign Up
+            </IconButton>
           </div>
         </Nav>
 
@@ -33,13 +59,48 @@ const Header: React.FC = () => {
           <p>Grow your audience and build your online brand</p>
 
           <div className='cta-btns'>
-            <Button >
-              Start For Free
-            </Button>
+            <IconButton
+              sx={{
+                borderRadius: themeContext.borderRadius,
+                backgroundColor: themeContext.palette.neutral.white,
+                color: themeContext.palette.primary.lightRed,
+                fontSize: '0.9rem',
+                fontWeight: '700',
+                cursor: "pointer",
+                padding: "15px 20px",
+                "&:hover": {
+                  backgroundColor: themeContext.palette.primary.veryLightRed,
+                  color: themeContext.palette.neutral.white,
+                  cursor: "pointer",
+                  borderRadius: themeContext.borderRadius,
+                }
+              }}
 
-            <Button border='1px solid #fff' bg='transparent' color='#fff'>
+            >
+              Start For Free
+            </IconButton>
+
+            <IconButton
+              sx={{
+                borderRadius: themeContext.borderRadius,
+                color: themeContext.palette.neutral.white,
+                backgroundColor: 'transparent',
+                fontSize: '0.9rem',
+                fontWeight: '700',
+                cursor: "pointer",
+                border: "1px solid #fff",
+                padding: "15px 20px",
+                "&:hover": {
+                  color: themeContext.palette.primary.lightRed,
+                  backgroundColor: themeContext.palette.neutral.white,
+                  cursor: "pointer",
+                  borderRadius: themeContext.borderRadius,
+                }
+              }}
+
+            >
               Learn More
-            </Button>
+            </IconButton>
           </div>
 
         </div>

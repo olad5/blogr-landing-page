@@ -1,7 +1,7 @@
 import {DefaultTheme} from 'styled-components';
 
 const theme: DefaultTheme = {
-  borderRadius: '5px',
+  borderRadius: '50px',
   palette: {
     primary: {
       lightRed: 'hsl(356,100%,66%)',
