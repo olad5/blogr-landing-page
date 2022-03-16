@@ -56,7 +56,7 @@ export const Nav = styled.nav`
       font-size: 1rem;
       color: #fff;
       text-decoration: none;
-
+      position:relative;
     }
   }
 
@@ -66,7 +66,13 @@ export const Logo = styled.img`
 
 `
 
-export const Image = styled.img`
-  margin-left: 3px;
+interface IImageProps {
+  toggle?: boolean;
+}
 
+export const Image = styled.img<IImageProps>`
+  margin-left: 7px;
+  transform: ${(props) => props.toggle ? 'rotate(180deg)' : ''};
+  margin-top: 7px;
+  height: 9px;
 `
