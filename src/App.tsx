@@ -21,11 +21,10 @@ function App() {
       <>
         <GlobalStyles />
         <Header />
-
         <IntroSection>
           <h3>Designed for the future</h3>
           <StyledInfo>
-            <h4>Introducing an extensible editor</h4>
+            <h4><span>Introducing an</span> <span>extensible editor</span></h4>
             <p>
               Blogr features an exceedingly intuitive interface which lets you focus
               on one thing: creating content.  The editor supports management of
@@ -33,7 +32,7 @@ function App() {
               videos, and Markdown. Extensibility with plugins and themes provide easy
               ways to add functionality or change the looks of a blog.
             </p>
-            <h4> Robust content management </h4>
+            <h4><span>Robust content </span> <span>management</span></h4>
             <p>
               Flexible content management enables users to easily move through posts.
               Increase the usability of your blog by adding customized categories,

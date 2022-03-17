@@ -32,6 +32,10 @@ export const InfrastructureSection = styled.div`
     margin-right:5rem;
   }
 
+  @media (max-width: ${({theme}) => theme.mobile}) {
+        margin-top: 13rem;
+  }
+
 `
 
 export const Image = styled.img`

@@ -18,6 +18,37 @@ export const StyledInfo = styled.div`
       color: ${({theme}) => theme.palette.neutral.veryDarkGrayishBlue};
     }
 
-  }
+  @media (max-width: ${({theme}) => theme.mobile}) {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    max-width:100%;
+    margin:0;
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align:center;
+        
+      }
+
+      h4:first-of-type  {
+        margin-top: 13rem;
+      }
+
+
+      h4 span {
+        display:block;
+      }
+
+      p  { 
+        text-align:center;
+        padding: 0 1rem;
+        margin-top:0rem;
+      }
+
+
+
+    }
 
 `

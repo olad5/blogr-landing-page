@@ -22,4 +22,25 @@ export const IntroSection = styled.div`
     max-width:930px;
   }
 
+  @media (max-width: ${({theme}) => theme.mobile}) {
+      display:flex;
+      background-position: 50% 13%;
+      background-size: 60%;
+      flex-direction:column;
+
+      h3 {
+        font-size: 1.2rem;
+        color: ${({theme}) => theme.palette.neutral.veryDarkBlackBlue};
+        font-weight:600;
+        margin-top:-6.2rem;
+      }
+
+
+      div {
+        padding-left:0rem;
+      }
+
+    }
+  }
+
 `
