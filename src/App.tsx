@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 import {Container} from './components/styles/Container.styled'
 import GlobalStyles from './components/styles/Global'
 import {theme} from './components/styles/theme'
-import {Flex} from './components/styles/Flex.styled'
 import {InfrastructureSection, Image} from './components/styles/Infrastructure.styled'
 import {StyledInfo} from './components/styles/SectionInfo.styled'
 import {IntroSection} from './components/styles/IntroSection.styled'
@@ -25,7 +24,7 @@ function App() {
           <h3>Designed for the future</h3>
           <StyledInfo>
             <h4><span>Introducing an</span> <span>extensible editor</span></h4>
-            <p>
+            <p className='intro-p1'>
               Blogr features an exceedingly intuitive interface which lets you focus
               on one thing: creating content.  The editor supports management of
               multiple blogs and allows easy manipulation of embeds such as images,
@@ -33,7 +32,7 @@ function App() {
               ways to add functionality or change the looks of a blog.
             </p>
             <h4><span>Robust content </span> <span>management</span></h4>
-            <p>
+            <p className='intro-p2'>
               Flexible content management enables users to easily move through posts.
               Increase the usability of your blog by adding customized categories,
               sections, format, or flow. With this functionality, you’re in full control.
@@ -44,7 +43,7 @@ function App() {
         <InfrastructureSection>
           <div className='infrastructure'>
             <Container>
-              <Flex height='none'>
+              <div className='flex-con'>
                 <Image src='./images/illustration-phones.svg' />
                 <div className='section-info'>
                   <h4>State of the Art Infrastructure</h4>
@@ -55,7 +54,7 @@ function App() {
                     your readers are, keeping your site competitive.
                   </p>
                 </div>
-              </Flex>
+              </div>
             </Container>
           </div>
         </InfrastructureSection>
@@ -78,7 +77,7 @@ function App() {
 
         <Footer />
       </>
-    </ThemeProvider>
+    </ThemeProvider >
   )
 }
 

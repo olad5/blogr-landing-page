@@ -32,8 +32,34 @@ export const InfrastructureSection = styled.div`
     margin-right:5rem;
   }
 
+  .flex-con {
+    display:flex;
+    justify-content: space-between;
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
-        margin-top: 13rem;
+        margin-top: 21rem;
+        height: 80vh;
+        background-position: 50.5% -263px;
+        background-size:162% ;
+
+        .section-info {
+          max-width:95%;
+          text-align:center;
+          margin-right:0rem;
+          display:flex;
+          flex-direction: column;
+        }
+
+        .flex-con {
+          flex-direction: column;
+          align-items:center;
+        }
+
+        h4 {
+          font-size: 1.52rem;
+        }
+
   }
 
 `
@@ -42,4 +68,11 @@ export const Image = styled.img`
   margin-top: -10rem;
   margin-left: -3rem;
   width:43%;
+
+  @media (max-width: ${({theme}) => theme.mobile}) {
+      height:43%;
+      width:120%;
+      margin-left: 0rem;
+      margin-top: -17rem;
+  }
 `

@@ -36,6 +36,10 @@ export const StyledInfo = styled.div`
         margin-top: 13rem;
       }
 
+      .intro-p1 {
+        margin-bottom: 3rem;
+      }
+
 
       h4 span {
         display:block;
@@ -45,9 +49,8 @@ export const StyledInfo = styled.div`
         text-align:center;
         padding: 0 1rem;
         margin-top:0rem;
+        margin-bottom:-4rem;
       }
-
-
 
     }
 
