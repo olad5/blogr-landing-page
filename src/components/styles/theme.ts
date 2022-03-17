@@ -26,6 +26,8 @@ const theme: DefaultTheme = {
     }
   },
   mobile: '375px',
+  tabPort: '900px',
+  tabLand: '1200px',
   desktop: '1440px',
 
 };

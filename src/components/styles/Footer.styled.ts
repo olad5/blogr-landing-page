@@ -5,7 +5,7 @@ export const StyledFooter = styled.footer`
   padding: 40px 0;
   background-position: 20% 52%, 100%;
   background-size: 210%, 100%;
-  height: 51.5vh;
+  height: 54vh;
   border-top-right-radius:100px;
 `
 

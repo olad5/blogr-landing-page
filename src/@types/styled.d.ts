@@ -6,9 +6,11 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     borderRadius: string;
     mobile: string,
-    desktop: string,
+    tabPort: string;
+    tabLand: string;
+    desktop: string;
 
-     palette: {
+    palette: {
       primary: {
         lightRed: string;
         veryLightRed: string;
