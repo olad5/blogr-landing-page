@@ -32,10 +32,6 @@ export const StyledInfo = styled.div`
         
       }
 
-      h4:first-of-type  {
-        margin-top: 13rem;
-      }
-
       .intro-p1 {
         margin-bottom: 3rem;
       }

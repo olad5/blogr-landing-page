@@ -26,4 +26,32 @@ export const OutroSection = styled.div`
     }
   }
 
+  @media (max-width: ${({theme}) => theme.mobile}) {
+    background-image: 
+      url('./images/illustration-laptop-mobile.svg');
+    background-position: 50% 13%;
+    background-size: 60%;
+    margin-right:0rem;
+    display:flex;
+
+    div {
+      margin-left:0rem;
+      margin-top:2rem;
+      max-width:930px;
+
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom:1.4rem;
+        margin-top:7rem;
+      }
+
+      p {
+        max-width: 34rem;
+      }
+
+      p:nth-of-type(2) {
+        margin-bottom:9rem;
+      }
+    }
+  }
 `

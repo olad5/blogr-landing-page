@@ -23,6 +23,8 @@ export const IntroSection = styled.div`
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
+  background-image: 
+    url('./images/illustration-editor-mobile.svg');
       display:flex;
       background-position: 50% 13%;
       background-size: 60%;
@@ -35,6 +37,9 @@ export const IntroSection = styled.div`
         margin-top:-6.2rem;
       }
 
+      h4:first-of-type  {
+        margin-top: 13rem;
+      }
 
       div {
         padding-left:0rem;

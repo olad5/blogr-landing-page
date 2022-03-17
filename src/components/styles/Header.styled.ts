@@ -39,6 +39,10 @@ export const StyledHeader = styled.header`
 
 
   @media (max-width: ${({theme}) => theme.mobile}) {
+  background-image: 
+    url('./images/bg-pattern-intro-mobile.svg'),
+    linear-gradient(95deg, ${({theme}) => theme.palette.gradient.veryLightRed}, 
+                    ${({theme}) => theme.palette.gradient.lightRed});
     background-position: 30% 33%,100%;
     background-size: 290%, 100%;
     height: 62vh;
