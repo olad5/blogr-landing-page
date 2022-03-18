@@ -7,6 +7,11 @@ export const StyledFooter = styled.footer`
   background-size: 210%, 100%;
   height: 54vh;
   border-top-right-radius:100px;
+
+  @media (max-width: ${({theme}) => theme.mobile}) {
+    height:  133vh;
+    max-width: ${({theme}) => theme.mobile};
+  }
 `
 
 export const Nav = styled.nav`
@@ -15,13 +20,11 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 40px;
 
-    &   a {
-      text-decoration: none;
-    }
-
-  & > div {
-    display: flex;
+  &   a {
+    text-decoration: none;
   }
+
+
 
   .nav-links {
       font-size: 1rem;
@@ -42,4 +45,39 @@ export const Nav = styled.nav`
         font-weight: 400;
     }
   }
+
+  @media (max-width: ${({theme}) => theme.mobile}) {
+    flex-direction:column;
+    height: 120vh;
+
+
+
+    img {
+      margin-top: 2rem;
+    }
+
+    & >  div {
+      display: flex;
+      flex-grow: 2;
+    }
+
+    .nav-links {
+        margin-top:6rem;
+
+        &:nth-of-type(3) {
+          margin-top:3rem;
+        }
+    }
+
+    .other-links  a {
+        text-align:center;
+    }
+
+    .company   {
+        margin-top:7rem;
+    }
+
+
+  }
+
 `
