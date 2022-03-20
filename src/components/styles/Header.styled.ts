@@ -28,6 +28,7 @@ export const StyledHeader = styled.header`
     display:none;
   }
 
+
   .cta-btns {
     width:16rem;
     height:2.8rem;
@@ -39,19 +40,17 @@ export const StyledHeader = styled.header`
 
 
   @media (max-width: ${({theme}) => theme.mobile}) {
-  background-image: 
-    url('./images/bg-pattern-intro-mobile.svg'),
-    linear-gradient(95deg, ${({theme}) => theme.palette.gradient.veryLightRed}, 
-                    ${({theme}) => theme.palette.gradient.lightRed});
-    background-position: 30% 33%,100%;
-    background-size: 290%, 100%;
-    height: 62vh;
-    flex-direction: column;
-    text-align: center;
-    max-width: ${({theme}) => theme.mobile};
-    .login-sign-up {
-      display:none;
-    }
+      background-position: 30% 33%,100%;
+      background-size: 290%, 100%;
+      height: 62vh;
+      flex-direction: column;
+      text-align: center;
+      max-width: ${({theme}) => theme.mobile};
+
+      .login-sign-up {
+        display:none;
+      }
+
 
     .cta-parent {
         display:flex;
@@ -110,6 +109,8 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 40px;
 
+  position :relative;
+
   & > div {
   display: flex;
 
@@ -131,8 +132,19 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
+
     .nav-links {
       display:none;
+    }
+
+    .ham-menu {
+      position:absolute;
+      width: 99%;
+      height: 60vh;
+      top:2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+      z-index: 10;
     }
   }
 

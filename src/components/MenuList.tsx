@@ -1,4 +1,4 @@
-import {useState, useRef, useEffect} from 'react';
+import {useState, useRef} from 'react';
 /* Components */
 import Button from '@mui/material/Button';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
@@ -27,6 +27,7 @@ const MenuListComposition: React.FC<IProps> = ({parentLink, childLinks}) => {
     setOpen((prevOpen) => !prevOpen);
   };
 
+  /* this function is for click away purposes */
   const handleClose = (event: Event | React.SyntheticEvent) => {
     if (
       anchorRef.current &&
@@ -47,15 +48,6 @@ const MenuListComposition: React.FC<IProps> = ({parentLink, childLinks}) => {
     }
   }
 
-  // return focus to the button when we transitioned from !open -> open
-  const prevOpen = useRef(open);
-  useEffect(() => {
-    if (prevOpen.current === true && open === false) {
-      anchorRef.current!.focus();
-    }
-
-    prevOpen.current = open;
-  }, [open]);
 
   return (
     <Stack direction="row" spacing={2}>
@@ -107,8 +99,8 @@ const MenuListComposition: React.FC<IProps> = ({parentLink, childLinks}) => {
                   >
                     <ChildrenLinksStyle>
                       {childLinks.map(link => (
-                        <MenuItem onClick={handleClose}>
-                          <a href='#' className='childlinks' key={childLinks.indexOf(link)}>
+                        <MenuItem onClick={handleClose} key={childLinks.indexOf(link)}>
+                          <a href='#' className='childlinks' >
                             {link}
                           </a>
                         </MenuItem>

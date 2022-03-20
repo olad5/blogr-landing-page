@@ -1,24 +1,27 @@
 /* Components */
 import {Container} from './styles/Container.styled'
 import MenuListComposition from './MenuList'
-import {useContext} from 'react'
+import {useContext, useState} from 'react'
 import {ThemeContext} from 'styled-components'
 import Button from './Button';
 import MenuIcon from '@material-ui/icons/Menu';
+import HamMenu from './HamMenu';
 
 
 
-/* Styles */
 import {StyledHeader, Nav, Logo} from './styles/Header.styled'
 
 
 const Header: React.FC = () => {
 
-  /* using the styled components global theme */
   const themeContext = useContext(ThemeContext)
-  const handleMenuClick = () => {
 
+  const [open, setOpen] = useState(false)
+
+  const handleMenuClick = () => {
+    setOpen(!open)
   }
+
 
 
   return (
@@ -51,8 +54,15 @@ const Header: React.FC = () => {
             onClick={handleMenuClick}
             style={{color: 'white'}}
           />
-        </Nav>
+          {
+            open ? (
+              <div className='ham-menu'>
+                <HamMenu />
+              </div>
+            ) : null
+          }
 
+        </Nav>
         <div className='cta-parent'>
           <h1><span>A modern</span> <span>publishing platform</span></h1>
 
