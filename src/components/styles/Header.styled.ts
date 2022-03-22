@@ -140,10 +140,11 @@ export const Nav = styled.nav`
     .ham-menu {
       position:absolute;
       width: 99%;
-      height: 60vh;
+      height: 56vh;
       top:2rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+      box-shadow: 0px 23px 5px 11px rgba(0,0,0,0.11);
+
       z-index: 10;
     }
   }

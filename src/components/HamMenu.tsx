@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, forwardRef} from 'react';
 import List from '@mui/material/List';
 import DropDownItem from './DropDownItem';
 import Button from './Button';
@@ -8,7 +8,8 @@ import {useContext} from 'react'
 import Divider from '@mui/material/Divider';
 
 
-const HamMenu: React.FC = () => {
+/* https://www.carlrippon.com/react-forwardref-typescript/ */
+const HamMenu = forwardRef<HTMLElement>((props, ref) => {
   const themeContext = useContext(ThemeContext)
 
   const [currentMenu, setCurrentMenu] = useState<number | null>(null);
@@ -55,50 +56,51 @@ const HamMenu: React.FC = () => {
     setCurrentMenu(id)
   }
 
+
   return (
-      <StyledMenu>
-          <List
-            className='list'
-            sx={{
-              width: '100%',
-              height: '100%',
-              maxWidth: 360,
-              bgcolor: 'background.paper',
-              textAlign: 'center',
-              padding: ' 2rem 2rem'
-            }}
-            component="nav"
-            aria-labelledby="nested-list-subheader"
-          >
-            {
-              menus.map((menu) => (
-                <DropDownItem
-                  key={menu.id}
-                  menu={menu}
-                  active={currentMenu === menu.id}
-                  onClick={() => handleClick(menu.id)}
-                />
-              ))
+    <StyledMenu >
+      <List
+        ref={ref}
+        className='list'
+        sx={{
+          width: '100%',
+          height: '100%',
+          maxWidth: 360,
+          bgcolor: 'background.paper',
+          textAlign: 'center',
+          padding: ' 2rem 2rem'
+        }}
+        component="nav"
+        aria-labelledby="nested-list-subheader"
+      >
+        {
+          menus.map((menu) => (
+            <DropDownItem
+              key={menu.id}
+              menu={menu}
+              active={currentMenu === menu.id}
+              onClick={() => handleClick(menu.id)}
+            />
+          ))
+        }
+        <div>
+          <Divider />
+          <Button
+            text='Login'
+            fg={themeContext.palette.neutral.veryDarkGrayishBlue}
+          />
+          <Button
+            fg='#fff'
+            bg={
+              `linear-gradient(87deg, ${themeContext.palette.gradient.veryLightRed} -10%, ${themeContext.palette.gradient.lightRed} 100%)`
             }
-            <div>
-              <Divider />
-              <Button
-                text='Login'
-                fg={themeContext.palette.neutral.veryDarkGrayishBlue}
-              />
-              <Button
-                fg='#fff'
-                bg={
-                  `linear-gradient(87deg, ${themeContext.palette.gradient.veryLightRed} -10%, ${themeContext.palette.gradient.lightRed} 100%)`
-                }
-                text='Sign Up' />
+            text='Sign Up' />
 
-            </div>
-          </List>
+        </div>
+      </List>
 
-      </StyledMenu>
+    </StyledMenu>
   );
-}
-
+})
 
 export default HamMenu;

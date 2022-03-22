@@ -1,7 +1,7 @@
 /* Components */
 import {Container} from './styles/Container.styled'
 import MenuListComposition from './MenuList'
-import {useContext, useState} from 'react'
+import {useContext, useEffect, useRef, useState} from 'react'
 import {ThemeContext} from 'styled-components'
 import Button from './Button';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -22,6 +22,36 @@ const Header: React.FC = () => {
     setOpen(!open)
   }
 
+  /* typing function parameter that accepts a function */
+  /* https://stackoverflow.com/questions/68091713/typescript-function-with-function-as-parameter */
+  let useClickOutside = (handler: () => void) => {
+    let domNode = useRef<HTMLElement | null>(null);
+
+
+    useEffect(() => {
+      let maybeHandler = (event: Event | React.SyntheticEvent) => {
+        if (!domNode.current) return
+
+        if (!(domNode.current.contains(event.target as HTMLElement))) {
+          handler();
+        }
+      };
+
+      document.addEventListener("mousedown", maybeHandler);
+
+      /* cleaning up the event listener */
+      return () => {
+        document.removeEventListener("mousedown", maybeHandler);
+      };
+    });
+
+    return domNode;
+  };
+
+  /* https://www.youtube.com/watch?v=eWO1b6EoCnQ */
+  let domNode = useClickOutside(() => {
+    setOpen(false);
+  });
 
 
   return (
@@ -57,7 +87,9 @@ const Header: React.FC = () => {
           {
             open ? (
               <div className='ham-menu'>
-                <HamMenu />
+                <HamMenu
+                  ref={domNode}
+                />
               </div>
             ) : null
           }
