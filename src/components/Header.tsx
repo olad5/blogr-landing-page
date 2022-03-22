@@ -5,10 +5,10 @@ import {useContext, useEffect, useRef, useState} from 'react'
 import {ThemeContext} from 'styled-components'
 import Button from './Button';
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import HamMenu from './HamMenu';
 
-
-
+/* styles */
 import {StyledHeader, Nav, Logo} from './styles/Header.styled'
 
 
@@ -17,10 +17,17 @@ const Header: React.FC = () => {
   const themeContext = useContext(ThemeContext)
 
   const [open, setOpen] = useState(false)
+  const [menuActive, setMenuActive] = useState<"open" | "close">("close")
 
   const handleMenuClick = () => {
+    if (menuActive === 'open') {
+      setMenuActive('close')
+      return
+    }
+    setMenuActive('open')
     setOpen(!open)
   }
+
 
   /* typing function parameter that accepts a function */
   /* https://stackoverflow.com/questions/68091713/typescript-function-with-function-as-parameter */
@@ -79,11 +86,27 @@ const Header: React.FC = () => {
             <Button text='Login' bg='transparent' fg='#fff' hoverBg='transparent' />
             <Button text='Sign Up' />
           </div>
-          <MenuIcon
-            className='menu-icon'
-            onClick={handleMenuClick}
-            style={{color: 'white'}}
-          />
+          {
+            menuActive === 'close' ? (
+              <MenuIcon
+                className='menu-icon'
+                onClick={handleMenuClick}
+                style={{color: 'white'}}
+              />
+
+            ) :
+              null
+          }
+          {
+            menuActive === 'open' ? (
+              <CloseIcon
+                className='menu-icon'
+                onClick={handleMenuClick}
+                style={{color: 'white'}}
+              />
+
+            ) : null
+          }
           {
             open ? (
               <div className='ham-menu'>
