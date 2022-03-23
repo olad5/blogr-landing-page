@@ -28,6 +28,22 @@ export const IntroSection = styled.div`
       }
 
     }
+
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+      background-position: 145% 53%;
+      background-size: 62%;
+
+      div {
+        padding-left:5rem;
+        max-width:930px;
+      }
+
+      p  { 
+        max-width: 19rem;
+      }
+
+    }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
   background-image: 
     url('./images/illustration-editor-mobile.svg');

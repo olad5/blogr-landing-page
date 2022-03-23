@@ -51,6 +51,25 @@ export const InfrastructureSection = styled.div`
 
   }
 
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+
+
+    h4 {
+      font-size:1.2rem;
+      margin-top: -3rem;
+    }
+
+    p {
+      font-size: .8rem;
+      width: 15rem;
+    }
+
+    .section-info {
+      margin-left:2rem;
+    }
+
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
         margin-top: 21rem;
         height: 80vh;
@@ -86,6 +105,13 @@ export const Image = styled.img`
 
   @media (max-width: ${({theme}) => theme.desktop}) {
       margin-left: 0rem;
+      width:49%;
+      height:43%;
+  }
+
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+      margin-left: -1rem;
+      width:55%;
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {

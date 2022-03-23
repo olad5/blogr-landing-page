@@ -31,12 +31,19 @@ export const OutroSection = styled.div`
     div {
       margin-left:37rem;
     }
+
   }
 
   @media (max-width: ${({theme}) => theme.tabPort}) {
+    padding-top:0rem;
+    background-position: -43% 9%;
+    background-size: 74%;
+    margin-right:2.5rem;
+
     div {
-      margin-left:15rem;
+      margin-left:25rem;
     }
+
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {

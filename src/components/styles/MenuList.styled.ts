@@ -4,6 +4,11 @@ export const ParentLinkStyle = styled.div`
   text-transform:capitalize;
   color: ${({theme}) => theme.palette.secondary.contrastText};
 
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+
+      font-size: .6rem;
+  }
+
 `
 export const ChildrenLinksStyle = styled.div`
   & a {
@@ -16,6 +21,7 @@ export const ChildrenLinksStyle = styled.div`
     }
 
   }
+
 `
 
 interface IImageProps {

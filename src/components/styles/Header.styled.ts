@@ -142,6 +142,14 @@ export const Nav = styled.nav`
     }
   }
 
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+
+    .nav-links {
+        width: 13rem;
+        gap:1;
+    }
+
+  }
   @media (max-width: ${({theme}) => theme.mobile}) {
 
     .nav-links {
