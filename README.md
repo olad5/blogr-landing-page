@@ -26,6 +26,9 @@ This is a solution to the [Time Blog landing page challenge on Frontend Mentor](
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Install the packages and dependencies
 ### `yarn run dev`
 
 Runs the app in the development mode.<br />
