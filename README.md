@@ -9,7 +9,7 @@ This is a solution to the [Time Blog landing page challenge on Frontend Mentor](
 
 ### Links
 
-- Live Link: [Time Tracking Dashboard](https://francis-blogr-landing-page.netlify.app/)
+- Live Link: [Blogr Landing Page](https://francis-blogr-landing-page.netlify.app/)
 
 ## My process
 
