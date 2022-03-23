@@ -34,11 +34,20 @@ export const OutroSection = styled.div`
 
   }
 
-  @media (max-width: ${({theme}) => theme.tabPort}) {
+  @media (max-width: ${({theme}) => theme.tabLand}) {
     padding-top:0rem;
-    background-position: -43% 9%;
+    background-position: -62% 9%;
     background-size: 74%;
     margin-right:2.5rem;
+
+    div {
+      margin-left:34rem;
+    }
+
+  }
+
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+    background-position: -43% 9%;
 
     div {
       margin-left:25rem;
@@ -49,10 +58,11 @@ export const OutroSection = styled.div`
   @media (max-width: ${({theme}) => theme.mobile}) {
     background-image: 
       url('./images/illustration-laptop-mobile.svg');
-    background-position: 50% 13%;
-    background-size: 60%;
+    background-position: 50% 4%;
+    background-size: 80%;
     margin-right:0rem;
     display:flex;
+    padding-top:6rem;
 
     div {
       margin-left:0rem;

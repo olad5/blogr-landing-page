@@ -51,8 +51,7 @@ export const InfrastructureSection = styled.div`
 
   }
 
-  @media (max-width: ${({theme}) => theme.tabPort}) {
-
+  @media (max-width: ${({theme}) => theme.tabLand}) {
 
     h4 {
       font-size:1.2rem;
@@ -61,7 +60,7 @@ export const InfrastructureSection = styled.div`
 
     p {
       font-size: .8rem;
-      width: 15rem;
+       width: 15rem;
     }
 
     .section-info {
@@ -69,6 +68,7 @@ export const InfrastructureSection = styled.div`
     }
 
   }
+
 
   @media (max-width: ${({theme}) => theme.mobile}) {
         margin-top: 21rem;

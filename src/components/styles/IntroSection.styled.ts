@@ -29,7 +29,7 @@ export const IntroSection = styled.div`
 
     }
 
-  @media (max-width: ${({theme}) => theme.tabPort}) {
+  @media (max-width: ${({theme}) => theme.tabLand}) {
       background-position: 145% 53%;
       background-size: 62%;
 
@@ -39,10 +39,18 @@ export const IntroSection = styled.div`
       }
 
       p  { 
+        max-width: 23rem;
+      }
+
+  }
+
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+
+      p  { 
         max-width: 19rem;
       }
 
-    }
+  }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
   background-image: 

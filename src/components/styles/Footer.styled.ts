@@ -48,14 +48,11 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (max-width: ${({theme}) => theme.tabPort}) {
-
+  @media (max-width: ${({theme}) => theme.tabLand}) {
       .flex {
         width: 10rem;
      }
 
-
-  }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
     flex-direction:column;
