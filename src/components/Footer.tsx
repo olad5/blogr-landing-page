@@ -66,7 +66,7 @@ const Footer: React.FC = () => (
           style={{color: 'white'}}
         />
       </IconButton>
-      <IconButton aria-label="github" onClick={() => window.open('https://github.com/olad5')}>
+      <IconButton aria-label="github" onClick={() => window.open('https://github.com/olad5/blogr-landing-page')}>
         <GithubIcon
           fontSize="large"
           style={{color: 'white'}}
