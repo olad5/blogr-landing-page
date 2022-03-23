@@ -46,10 +46,6 @@ export const InfrastructureSection = styled.div`
 
     h4 {
       font-size: 1.7rem;
-      font-weight: 500;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      color: ${({theme}) => theme.palette.neutral.white};
     }
 
 
@@ -66,6 +62,7 @@ export const InfrastructureSection = styled.div`
           text-align:center;
           margin-right:0rem;
           display:flex;
+          margin-left:0rem;
           flex-direction: column;
         }
 
