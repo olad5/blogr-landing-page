@@ -14,7 +14,6 @@ import {IntroSection} from './components/styles/IntroSection.styled'
 import {OutroSection} from './components/styles/OutroSection.styled'
 
 
-/* TODO remove the redundant code */
 function App() {
   return (
     <ThemeProvider theme={theme}>
