@@ -32,6 +32,13 @@ export const OutroSection = styled.div`
       margin-left:37rem;
     }
   }
+
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+    div {
+      margin-left:15rem;
+    }
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
     background-image: 
       url('./images/illustration-laptop-mobile.svg');

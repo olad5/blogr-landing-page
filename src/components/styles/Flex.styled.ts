@@ -7,6 +7,7 @@ interface IProps {
   jc?: string;
   ai?: string;
   pds?: string;
+  className?: string;
 }
 
 export const Flex = styled.div<IProps>`

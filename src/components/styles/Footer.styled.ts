@@ -9,6 +9,7 @@ export const StyledFooter = styled.footer`
   border-top-right-radius:100px;
 
 
+
   @media (max-width: ${({theme}) => theme.mobile}) {
     height:  133vh;
     max-width: ${({theme}) => theme.mobile};
@@ -21,7 +22,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 40px;
 
-  &   a {
+  &  a {
     text-decoration: none;
   }
 
@@ -45,6 +46,15 @@ export const Nav = styled.nav`
         color: ${(props) => props.color || props.theme.palette.neutral.grayishBlue};
         font-weight: 400;
     }
+  }
+
+  @media (max-width: ${({theme}) => theme.tabPort}) {
+
+      .flex {
+        width: 10rem;
+     }
+
+
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {

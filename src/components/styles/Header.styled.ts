@@ -50,6 +50,7 @@ export const StyledHeader = styled.header`
 
   }
 
+
   @media (max-width: ${({theme}) => theme.mobile}) {
       background-position: 30% 33%,100%;
       background-size: 290%, 100%;
@@ -91,7 +92,6 @@ export const StyledHeader = styled.header`
 
     .menu-icon {
       display:block;
-      color: green;
     }
    
     & .icon-button {
