@@ -37,6 +37,24 @@ export const InfrastructureSection = styled.div`
     justify-content: space-between;
   }
 
+  @media (max-width: ${({theme}) => theme.desktop}) {
+    background-position: -40.5% 84%;
+
+    .section-info {
+      margin-left:5rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: ${({theme}) => theme.palette.neutral.white};
+    }
+
+
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
         margin-top: 21rem;
         height: 80vh;
@@ -68,6 +86,10 @@ export const Image = styled.img`
   margin-top: -10rem;
   margin-left: -3rem;
   width:43%;
+
+  @media (max-width: ${({theme}) => theme.desktop}) {
+      margin-left: 0rem;
+  }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
       height:43%;

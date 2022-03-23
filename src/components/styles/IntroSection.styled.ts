@@ -22,6 +22,12 @@ export const IntroSection = styled.div`
     max-width:930px;
   }
 
+  @media (max-width: ${({theme}) => theme.desktop}) {
+      p  { 
+        max-width: 30rem;
+      }
+
+    }
   @media (max-width: ${({theme}) => theme.mobile}) {
   background-image: 
     url('./images/illustration-editor-mobile.svg');

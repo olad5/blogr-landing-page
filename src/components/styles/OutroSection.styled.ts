@@ -26,6 +26,12 @@ export const OutroSection = styled.div`
     }
   }
 
+  @media (max-width: ${({theme}) => theme.desktop}) {
+
+    div {
+      margin-left:37rem;
+    }
+  }
   @media (max-width: ${({theme}) => theme.mobile}) {
     background-image: 
       url('./images/illustration-laptop-mobile.svg');

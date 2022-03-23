@@ -39,6 +39,17 @@ export const StyledHeader = styled.header`
   }
 
 
+  @media (max-width: ${({theme}) => theme.desktop}) {
+    h1 {
+      font-size: 3.1rem;
+    }
+
+    p  { 
+      font-size: 1.22rem;
+    }
+
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
       background-position: 30% 33%,100%;
       background-size: 290%, 100%;

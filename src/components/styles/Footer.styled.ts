@@ -8,6 +8,7 @@ export const StyledFooter = styled.footer`
   height: 54vh;
   border-top-right-radius:100px;
 
+
   @media (max-width: ${({theme}) => theme.mobile}) {
     height:  133vh;
     max-width: ${({theme}) => theme.mobile};

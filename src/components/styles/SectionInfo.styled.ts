@@ -18,6 +18,16 @@ export const StyledInfo = styled.div`
       color: ${({theme}) => theme.palette.neutral.veryDarkGrayishBlue};
     }
 
+  @media (max-width: ${({theme}) => theme.desktop}) {
+      h4 {
+        font-size: 1.1rem;
+      }
+
+      p  { 
+        font-size: 1rem;
+      }
+
+    }
   @media (max-width: ${({theme}) => theme.mobile}) {
     display:flex;
     flex-direction:column;
