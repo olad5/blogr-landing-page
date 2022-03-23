@@ -1,6 +1,6 @@
 /* components */
-import TwitterIcon from '@material-ui/icons/Twitter';
-import GithubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
 
 
@@ -67,7 +67,7 @@ const Footer: React.FC = () => (
         />
       </IconButton>
       <IconButton aria-label="github" onClick={() => window.open('https://github.com/olad5/blogr-landing-page')}>
-        <GithubIcon
+        <GitHubIcon
           fontSize="large"
           style={{color: 'white'}}
         />

@@ -4,8 +4,8 @@ import MenuListComposition from './MenuList'
 import {useContext, useEffect, useRef, useState} from 'react'
 import {ThemeContext} from 'styled-components'
 import Button from './Button';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import HamMenu from './HamMenu';
 
 /* styles */
@@ -144,3 +144,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
