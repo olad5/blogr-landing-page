@@ -1,7 +1,13 @@
+/* components */
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GithubIcon from '@material-ui/icons/GitHub';
+import IconButton from '@mui/material/IconButton';
+
+
+/* styles */
 import {StyledFooter, Nav} from './styles/Footer.styled'
 import {Container} from './styles/Container.styled'
 import {Flex} from './styles/Flex.styled';
-
 
 const Footer: React.FC = () => (
   <StyledFooter >
@@ -52,7 +58,23 @@ const Footer: React.FC = () => (
 
       </Nav>
     </Container>
+
+    <div className='social-links'>
+      <IconButton aria-label="twitter" onClick={() => window.open('https://twitter.com/_olad5')}>
+        <TwitterIcon
+          fontSize="large"
+          style={{color: 'white'}}
+        />
+      </IconButton>
+      <IconButton aria-label="github" onClick={() => window.open('https://github.com/olad5')}>
+        <GithubIcon
+          fontSize="large"
+          style={{color: 'white'}}
+        />
+      </IconButton>
+    </div>
   </StyledFooter >
+
 
 );
 

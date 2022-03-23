@@ -5,14 +5,26 @@ export const StyledFooter = styled.footer`
   padding: 40px 0;
   background-position: 20% 52%, 100%;
   background-size: 210%, 100%;
+  display:flex;
+  flex-direction:column;
   height: 54vh;
   border-top-right-radius:100px;
 
 
+  .social-links {
+    margin-top: 13rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
-    height:  133vh;
+    height:  143vh;
     max-width: ${({theme}) => theme.mobile};
+
+    .social-links {
+      margin-top: 0rem;
+    }
   }
 `
 
