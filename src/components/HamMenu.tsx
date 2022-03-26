@@ -90,15 +90,21 @@ const HamMenu = forwardRef<HTMLElement>((props, ref) => {
         <div>
           <Divider />
           <Button
-            text='Login'
             fg={themeContext.palette.neutral.veryDarkGrayishBlue}
-          />
+          >
+            Login
+          </Button>
+
           <Button
+
             fg='#fff'
             bg={
               `linear-gradient(87deg, ${themeContext.palette.gradient.veryLightRed} -10%, ${themeContext.palette.gradient.lightRed} 100%)`
             }
-            text='Sign Up' />
+          >
+            Sign Up
+          </Button>
+
 
         </div>
       </List>
