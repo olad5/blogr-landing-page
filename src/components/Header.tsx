@@ -83,8 +83,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className='login-sign-up'>
-            <Button text='Login' bg='transparent' fg='#fff' hoverBg='transparent' />
-            <Button text='Sign Up' />
+            <Button  bg='transparent' fg='#fff' hoverBg='transparent'>Login</Button>
+            <Button>Sign Up</Button>
           </div>
           {
             menuActive === 'close' ? (
@@ -124,17 +124,17 @@ const Header: React.FC = () => {
           <p>Grow your audience and build your online brand</p>
 
           <div className='cta-btns'>
-            <Button text='Start For Free' />
+            <Button>Start For Free</Button>
 
             <Button
-              text='Learn More'
               fg={themeContext.palette.neutral.white}
               bg='transparent'
               border="1px solid #fff"
               hoverFg={themeContext.palette.primary.lightRed}
               hoverBg={themeContext.palette.neutral.white}
-
-            />
+            >
+              Learn More
+            </Button>
           </div>
         </div>
       </Container>

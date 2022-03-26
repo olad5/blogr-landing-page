@@ -9,10 +9,9 @@ interface IProps {
   hoverBg?: string;
   hoverFg?: string;
   border?: string;
-  text: string;
 }
 
-const Button: React.FC<IProps> = ({text, bg, fg, hoverFg, hoverBg, border}) => {
+const Button: React.FC<IProps> = ({bg, fg, hoverFg, hoverBg, border, children}) => {
   const themeContext = useContext(ThemeContext)
 
   return (
@@ -37,7 +36,8 @@ const Button: React.FC<IProps> = ({text, bg, fg, hoverFg, hoverBg, border}) => {
       }}
 
     >
-      {text}
+      {children}
+
     </IconButton>
   )
 
