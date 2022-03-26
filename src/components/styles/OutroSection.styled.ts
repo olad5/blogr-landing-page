@@ -89,7 +89,7 @@ export const OutroSection = styled.div`
 
   }
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileL}) {
     background-image: 
       url('./images/illustration-laptop-mobile.svg');
     background-position: 50% 4%;
@@ -112,13 +112,34 @@ export const OutroSection = styled.div`
 
       p {
         max-width: 34rem;
-        width:${({theme}) => theme.mobile} ;
+        width:${({theme}) => theme.mobileL} ;
         margin-left:0px;
       }
 
       p:nth-of-type(2) {
         margin-bottom:9rem;
       }
+    }
+  }
+  @media (max-width: ${({theme}) => theme.mobileM}) {
+
+    div {
+
+      p {
+        max-width: none;
+        width:${({theme}) => theme.mobileM} ;
+        margin-left:0px;
+      }
+    }
+  }
+
+  @media (max-width: ${({theme}) => theme.mobileS}) {
+    div {
+
+      p {
+        width:${({theme}) => theme.mobileS} ;
+      }
+
     }
   }
 `

@@ -5,7 +5,9 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     borderRadius: string;
-    mobile: string,
+    mobileS: string,
+    mobileM: string,
+    mobileL: string,
     tabPort: string;
     tabLand: string;
     desktop: string;

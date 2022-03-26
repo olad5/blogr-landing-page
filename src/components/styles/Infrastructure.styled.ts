@@ -78,7 +78,7 @@ export const InfrastructureSection = styled.div`
 
 
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileL}) {
         margin-top: 21rem;
         height: 80vh;
         background-position: 50.5% -263px;
@@ -104,7 +104,7 @@ export const InfrastructureSection = styled.div`
         }
 
         p {
-           width: 318.25px;
+           width: 100%;
            font-size: .9rem;
         }
 
@@ -134,7 +134,7 @@ export const Image = styled.img`
 
   }
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileL}) {
       height:43%;
       width:120%;
       margin-left: 0rem;

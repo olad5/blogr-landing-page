@@ -1,5 +1,6 @@
 import {DefaultTheme} from 'styled-components';
 
+// https://jsramblings.com/how-to-use-media-queries-with-styled-components/
 const theme: DefaultTheme = {
   borderRadius: '50px',
   palette: {
@@ -25,7 +26,9 @@ const theme: DefaultTheme = {
       contrastText: '#ffffff'
     }
   },
-  mobile: '375px',
+  mobileS: '375px',
+  mobileM: '425px',
+  mobileL: '500px',
   tabPort: '900px',
   tabLand: '1200px',
   desktop: '1440px',

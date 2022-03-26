@@ -72,7 +72,7 @@ export const IntroSection = styled.div`
       }
   }
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileL}) {
   background-image: 
     url('./images/illustration-editor-mobile.svg');
       display:flex;
@@ -96,7 +96,7 @@ export const IntroSection = styled.div`
       }
 
       p  { 
-        max-width: 19rem;
+        max-width: 25rem;
         font-size: 1rem;
       }
     }

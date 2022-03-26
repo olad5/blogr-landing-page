@@ -27,9 +27,22 @@ export const StyledFooter = styled.footer`
   }
 
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: 770px) {
+    height: 66vh;
+
+  }
+
+  @media (min-width: 425px) and (max-width: 640px) {
+    height: 63vh;
+
+      .flex {
+        width: 8rem;
+     }
+  }
+
+
+  @media (max-width: ${({theme}) => theme.mobileL}) {
     height:  143vh;
-    max-width: ${({theme}) => theme.mobile};
 
     .social-links {
       margin-top: 0rem;
@@ -74,6 +87,13 @@ export const Nav = styled.nav`
         width: 10rem;
      }
 
+  @media (max-width: 770px) {
+      .flex {
+        width: 6rem;
+     }
+
+  }
+
   @media (max-width: 640px) {
 
       .flex {
@@ -81,7 +101,17 @@ export const Nav = styled.nav`
      }
   }
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+
+  @media (max-width: ${({theme}) => theme.mobileL}) {
+
+
+    img {
+      margin-top: 0rem;
+      margin-left: 0rem;
+    }
+  }
+
+  @media (max-width: ${({theme}) => theme.mobileL}) {
     flex-direction:column;
     height: 120vh;
 

@@ -23,12 +23,8 @@ export const StyledInfo = styled.div`
         font-size: 1.1rem;
       }
 
-      p  { 
-        font-size: 1rem;
-      }
-
     }
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileL}) {
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -52,10 +48,14 @@ export const StyledInfo = styled.div`
       }
 
       p  { 
+        max-width: 25rem;
+
         text-align:center;
         padding: 0 1rem;
         margin-top:0rem;
         margin-bottom:-4rem;
+
+        // changes 
       }
 
     }

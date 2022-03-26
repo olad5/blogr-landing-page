@@ -62,13 +62,17 @@ export const StyledHeader = styled.header`
 
   }
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileL}) {
+      height: 81vh;
+  }
+
+  @media (max-width: ${({theme}) => theme.mobileS}) {
       background-position: 30% 33%,100%;
       background-size: 290%, 100%;
       height: 62vh;
       flex-direction: column;
       text-align: center;
-      max-width: ${({theme}) => theme.mobile};
+      max-width: ${({theme}) => theme.mobileS};
 
       .login-sign-up {
         display:none;
@@ -178,7 +182,7 @@ export const Nav = styled.nav`
     }
   }
 
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileS}) {
 
     .nav-links {
       display:none;
@@ -199,7 +203,7 @@ export const Nav = styled.nav`
 `
 
 export const Logo = styled.img`
-  @media (max-width: ${({theme}) => theme.mobile}) {
+  @media (max-width: ${({theme}) => theme.mobileS}) {
     max-width: 70%;
   }
 
