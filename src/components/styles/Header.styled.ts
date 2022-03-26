@@ -50,6 +50,17 @@ export const StyledHeader = styled.header`
 
   }
 
+  @media (max-width: 640px) {
+
+      .login-sign-up {
+        display:none;
+      }
+
+    .menu-icon {
+      display:block;
+    }
+
+  }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
       background-position: 30% 33%,100%;
@@ -150,6 +161,23 @@ export const Nav = styled.nav`
     }
 
   }
+
+  @media (max-width: 640px) {
+    .nav-links {
+        display: none;
+    }
+
+    .ham-menu {
+      position:absolute;
+      width: 99%;
+      height: 56vh;
+      top:2rem;
+      border-radius: 10px;
+      box-shadow: 0px 23px 5px 11px rgba(0,0,0,0.11);
+      z-index: 10;
+    }
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
 
     .nav-links {

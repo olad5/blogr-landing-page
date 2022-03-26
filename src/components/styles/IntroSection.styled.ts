@@ -44,12 +44,32 @@ export const IntroSection = styled.div`
 
   }
 
+
   @media (max-width: ${({theme}) => theme.tabPort}) {
 
       p  { 
         max-width: 19rem;
       }
 
+  }
+
+  @media (max-width: 768px) {
+
+      p  { 
+        max-width: 15rem;
+      }
+
+  }
+
+  @media (max-width: 640px) {
+      div {
+        padding-left: 3rem;
+      }
+
+      p  { 
+        max-width: 14rem;
+        font-size: 0.8rem;
+      }
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
@@ -75,6 +95,10 @@ export const IntroSection = styled.div`
         padding-left:0rem;
       }
 
+      p  { 
+        max-width: 19rem;
+        font-size: 1rem;
+      }
     }
   }
 

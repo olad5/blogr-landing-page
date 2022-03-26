@@ -12,7 +12,7 @@ interface IProps {
 
 export const Flex = styled.div<IProps>`
   display: flex;
-  justify-content: ${(props) => props.jc || 'space-between'};
+  justify-content: ${(props) => props.jc || 'flex-start'};
   align-items: ${(props) => props.ai || ' stretch'};
   flex-direction: ${(props) => props.fd || 'row'};
   height: ${(props) => props.height || 0};

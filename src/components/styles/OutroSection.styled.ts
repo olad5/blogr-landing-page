@@ -55,6 +55,40 @@ export const OutroSection = styled.div`
 
   }
 
+  @media (max-width: 768px) {
+    background-position: -62% 9%;
+
+    div  {
+
+      h4 {
+        margin-left:-3rem;
+      }
+
+       p {
+        width: 15rem;
+        margin-left:-3rem;
+       }
+    }
+
+  }
+
+  @media (max-width: 640px) {
+    background-position: -82% 9%;
+
+    div {
+      margin-left:20rem;
+
+      h4 {
+        margin-left:-5rem;
+      }
+
+       p {
+        margin-left:-5rem;
+       }
+    }
+
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
     background-image: 
       url('./images/illustration-laptop-mobile.svg');
@@ -73,10 +107,13 @@ export const OutroSection = styled.div`
         font-size: 1.5rem;
         margin-bottom:1.4rem;
         margin-top:7rem;
+        margin-left:0rem;
       }
 
       p {
         max-width: 34rem;
+        width:${({theme}) => theme.mobile} ;
+        margin-left:0px;
       }
 
       p:nth-of-type(2) {

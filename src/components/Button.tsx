@@ -21,7 +21,6 @@ const Button: React.FC<IProps> = ({text, bg, fg, hoverFg, hoverBg, border}) => {
       className='icon-button'
       sx={{
         borderRadius: themeContext.borderRadius,
-        /* backgroundColor: bg || themeContext.palette.neutral.white, */
         background: bg || themeContext.palette.neutral.white,
         color: fg || themeContext.palette.primary.lightRed,
         fontSize: '0.9rem',

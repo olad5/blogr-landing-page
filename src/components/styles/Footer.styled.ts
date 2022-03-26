@@ -7,16 +7,25 @@ export const StyledFooter = styled.footer`
   background-size: 210%, 100%;
   display:flex;
   flex-direction:column;
-  height: 54vh;
+  height: 56vh;
   border-top-right-radius:100px;
 
 
   .social-links {
+    margin: 0 auto;
     margin-top: 13rem;
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
+    gap: 1;
+    width: 8rem;
+
+    & a {
+      color: white;
+      font-size: 3rem;
+    }
   }
+
 
   @media (max-width: ${({theme}) => theme.mobile}) {
     height:  143vh;
@@ -65,12 +74,16 @@ export const Nav = styled.nav`
         width: 10rem;
      }
 
+  @media (max-width: 640px) {
+
+      .flex {
+        width: 8rem;
+     }
+  }
 
   @media (max-width: ${({theme}) => theme.mobile}) {
     flex-direction:column;
     height: 120vh;
-
-
 
     img {
       margin-top: 2rem;

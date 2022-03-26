@@ -11,7 +11,6 @@ This is a solution to the [Time Blog landing page challenge on Frontend Mentor](
 
 - Live Link: [Blogr Landing Page](https://francis-blogr-landing-page.netlify.app/)
 
-## My process
 
 ### Built with
 

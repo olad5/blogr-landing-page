@@ -14,6 +14,10 @@ export const Container = styled.div`
     padding: 0 4rem;
   }
 
+  @media (max-width: 640px) {
+    padding: 0 1rem;
+  }
+
   @media (max-width: ${({theme}) => theme.mobile}) {
     padding: 0 20px;
   }

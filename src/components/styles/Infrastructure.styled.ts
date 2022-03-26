@@ -45,7 +45,7 @@ export const InfrastructureSection = styled.div`
     }
 
     h4 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
 
 
@@ -68,6 +68,14 @@ export const InfrastructureSection = styled.div`
     }
 
   }
+
+  @media (max-width: 640px) {
+    p {
+       width: 12rem;
+    }
+
+  }
+
 
 
   @media (max-width: ${({theme}) => theme.mobile}) {
@@ -92,6 +100,12 @@ export const InfrastructureSection = styled.div`
 
         h4 {
           font-size: 1.52rem;
+          margin-top: 0rem;
+        }
+
+        p {
+           width: 318.25px;
+           font-size: .9rem;
         }
 
   }
@@ -112,6 +126,12 @@ export const Image = styled.img`
   @media (max-width: ${({theme}) => theme.tabPort}) {
       margin-left: -1rem;
       width:55%;
+  }
+
+  @media (max-width: 768px) {
+
+    margin-top: -8.5rem;
+
   }
 
   @media (max-width: ${({theme}) => theme.mobile}) {

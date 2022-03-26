@@ -1,14 +1,18 @@
 import {useState, forwardRef} from 'react';
-import List from '@mui/material/List';
-import DropDownItem from './DropDownItem';
-import Button from './Button';
-import {StyledMenu} from './styles/HamMenu.styled';
 import {ThemeContext} from 'styled-components'
 import {useContext} from 'react'
-import Divider from '@mui/material/Divider';
 
+/* Components */
+import DropDownItem from './DropDownItem';
+import Button from './Button';
+import Divider from '@mui/material/Divider';
+import List from '@mui/material/List';
+
+/* styles */
+import {StyledMenu} from './styles/HamMenu.styled';
 
 /* https://www.carlrippon.com/react-forwardref-typescript/ */
+/* https://stackoverflow.com/questions/54654303/using-a-forwardref-component-with-children-in-typescript */
 const HamMenu = forwardRef<HTMLElement>((props, ref) => {
   const themeContext = useContext(ThemeContext)
 
@@ -65,7 +69,7 @@ const HamMenu = forwardRef<HTMLElement>((props, ref) => {
         sx={{
           width: '100%',
           height: '100%',
-          maxWidth: 360,
+          maxWidth: '100%',
           bgcolor: 'background.paper',
           textAlign: 'center',
           padding: ' 2rem 2rem'
