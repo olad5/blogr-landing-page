@@ -136,7 +136,7 @@ export const Image = styled.img`
 
   @media (max-width: ${({theme}) => theme.mobileL}) {
       height:43%;
-      width:120%;
+      width:100%;
       margin-left: 0rem;
       margin-top: -17rem;
   }

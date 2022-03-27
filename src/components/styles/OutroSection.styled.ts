@@ -6,7 +6,7 @@ export const OutroSection = styled.div`
   background-position: -43% 39%;
   background-repeat:no-repeat;
   background-size: 60%;
-  height: 140vh;
+  min-height: 140vh;
   text-align:center;
   padding-top:10rem;
   margin-right:8.5rem;
