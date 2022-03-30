@@ -111,9 +111,10 @@ export const OutroSection = styled.div`
       }
 
       p {
-        max-width: 34rem;
+        max-width: 95vw;
         width:${({theme}) => theme.mobileL} ;
         margin-left:0px;
+        text-align:center;
       }
 
       p:nth-of-type(2) {
@@ -126,7 +127,7 @@ export const OutroSection = styled.div`
     div {
 
       p {
-        max-width: none;
+        max-width: 100vw;
         width:${({theme}) => theme.mobileM} ;
         margin-left:0px;
       }
