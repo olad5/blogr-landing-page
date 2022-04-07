@@ -40,5 +40,5 @@ You will also see any lint errors in the console.
 ## Author
 
 - Website - [Francis shonubi](https://github.com/olad5)
-- Twitter - [@_olad5](https://www.twitter.com/olad5)
+- Twitter - [@_olad5](https://www.twitter.com/_olad5)
 
